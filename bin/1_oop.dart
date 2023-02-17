@@ -15,12 +15,14 @@
 
 //CONTOH OOP
 class DataDiri {
+  //Ini merupakan sebuah properti
   //Kenapa di kasih tanda(?) karena kalo tidak ada tanda tanya maka dart membacanya sebagai non-nullable maka program akan error. Jadi tanda tanya tersebut adalah bahwa variable tersebut boleh bernilai null
   String? nama;
   int? umur;
   String? alamat;
   double? tinggiBadan;
 
+  //Ini merupakan method
   void startEngine() {
     print('Engine started.');
   }
