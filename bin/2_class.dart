@@ -37,10 +37,11 @@
 //CONTOH
 class Person {
   //CONTOH MENAMBAHKAN FIELD
-  String name = 'guest';
-  String? addres = 'Jakarta';
+  String name = 'Imran Muhamad Rafi';
+  String? addres = 'Cirebon';
   String? country = "Indonesia";
   String hobi = "Coding";
+  int? umur = 21;
 
   //CONTOH METHOD YANG ADA DI DALAM CLASS PERSON
   void sayHello(String paraName) {
