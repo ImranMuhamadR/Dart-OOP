@@ -41,11 +41,11 @@ class Person {
   String? addres = 'Cirebon';
   String? country = "Indonesia";
   String hobi = "Coding";
-  int? umur = 21;
+  int? umur = 99;
 
   //CONTOH METHOD YANG ADA DI DALAM CLASS PERSON
   void sayHello(String parameterName) {
-    print('Hello $parameterName, My name is $name');
+    print('Hello $parameterName, My name is $name umurku adalah $umur');
   }
 
   //CONTOH METHOD DENGAN RETURN VALUE
@@ -58,7 +58,7 @@ void main() {
   var person1 = Person();
 
   //CONTOH MANIPULASI PROPERTI
-  person1.name = 'Ai';
+  person1.name = 'Bot';
   person1.addres = 'Jakarta';
   person1.country;
 
@@ -67,6 +67,8 @@ void main() {
   print(person1.addres);
   print(person1.country);
 
-  //MENGAKSES FUNCTION
+  //MENGAKSES METHOD DARI METHOD sayHello
   person1.sayHello("imran");
+  //MENGAKSES METHOD DARI METHOD
+  person1.myHobi();
 }
