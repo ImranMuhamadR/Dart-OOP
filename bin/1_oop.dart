@@ -28,13 +28,13 @@ class Person {
   }
 }
 
+//Ini merupakan sebuah objek dari class Person
 void main() {
-  Person person1 = Person();
+  var person1 = Person();
   person1.nama = 'Imran Muhamad Rafi';
   person1.umur = 21;
   person1.alamat = 'Cirebon';
   person1.tinggiBadan = 167.0;
-  person1.startEngine();
   /*
   !PENJELASAN PROGRAM :
   Di sini, kita membuat class "DataDiri" yang memiliki 4 properti (nama, umur, alamat, tinggiBadan) dan 1 method (startEngine). 
@@ -42,18 +42,16 @@ void main() {
    */
 }
 
+//Ini merupakan objek dari class Person
 void main2() {
-  Person person2 = Person();
+  var person2 = Person();
   person2.nama = 'Tatang';
   person2.umur = 20;
   person2.alamat = 'Tanggerang';
   person2.tinggiBadan = 170.0;
-}
 
-void main3() {
-  Person person3 = Person();
-  person3.nama = 'Budi Darsono';
-  person3.umur = 24;
-  person3.alamat = 'Jakarta selatan';
-  person3.tinggiBadan = 175.0;
+  print(person2.nama);
+  print(person2.umur);
+  print(person2.alamat);
+  print(person2.tinggiBadan);
 }
