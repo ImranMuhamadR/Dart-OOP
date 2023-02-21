@@ -24,10 +24,10 @@ class Person {
   }
 }
 
-//CONTOH EXTENSION METHOD
+//CONTOH EXTENSION METHOD TANPA MEUBAH CLASS YANG SUDAH ADA
 extension GoodByeOnPerson on Person {
-  void sayGoodBye(String parameter) {
-    print('Good Bye $parameter, from $name');
+  void sayGoodBye(String paraName) {
+    print('Good Bye $paraName, from $name');
   }
 }
 
