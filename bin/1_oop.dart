@@ -14,7 +14,7 @@
  */
 
 //CONTOH OOP
-class DataDiri {
+class Person {
   //Ini merupakan sebuah properti
   //Kenapa di kasih tanda(?) karena kalo tidak ada tanda tanya maka dart membacanya sebagai non-nullable maka program akan error. Jadi tanda tanya tersebut adalah bahwa variable tersebut boleh bernilai null
   String? nama;
@@ -29,7 +29,7 @@ class DataDiri {
 }
 
 void main() {
-  DataDiri data = DataDiri();
+  Person data = Person();
   data.nama = 'Imran Muhamad Rafi';
   data.umur = 21;
   data.alamat = 'Cirebon';
