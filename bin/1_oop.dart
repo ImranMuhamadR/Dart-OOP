@@ -17,10 +17,10 @@
 class Person {
   //Ini merupakan sebuah properti
   //Kenapa di kasih tanda(?) karena kalo tidak ada tanda tanya maka dart membacanya sebagai non-nullable maka program akan error. Jadi tanda tanya tersebut adalah bahwa variable tersebut boleh bernilai null
-  String? nama;
-  int? umur;
-  String? alamat;
-  double? tinggiBadan;
+  String? nama = 'Imran Muhamad Rafi';
+  int? umur = 21;
+  String? alamat = 'Cirebon';
+  double? tinggiBadan = 165.0;
 
   //Ini merupakan method
   void startEngine() {
@@ -31,27 +31,17 @@ class Person {
 //Ini merupakan sebuah objek dari class Person
 void main() {
   var person1 = Person();
-  person1.nama = 'Imran Muhamad Rafi';
-  person1.umur = 21;
-  person1.alamat = 'Cirebon';
-  person1.tinggiBadan = 167.0;
-  /*
-  !PENJELASAN PROGRAM :
-  Di sini, kita membuat class "DataDiri" yang memiliki 4 properti (nama, umur, alamat, tinggiBadan) dan 1 method (startEngine). 
-  Kemudian kita membuat objek "myCar" dari class "Car" dan mengisi properti dan menjalankan methodnya.
-   */
-}
+  print(person1.nama);
+  print(person1.alamat);
+  print(person1.umur);
+  print(person1.tinggiBadan);
 
-//Ini merupakan objek dari class Person
-void main2() {
-  var person2 = Person();
-  person2.nama = 'Tatang';
+  Person person2 = Person();
+  person2.nama = 'Tatang Sutarman';
   person2.umur = 20;
   person2.alamat = 'Tanggerang';
-  person2.tinggiBadan = 170.0;
 
   print(person2.nama);
   print(person2.umur);
-  print(person2.alamat);
   print(person2.tinggiBadan);
 }
