@@ -1,6 +1,6 @@
 /*
 !METHOD EXPRESSION BODY
-- saat membuat method, terkadand kita menuggnakan satu baris kode.
+- saat membuat method, terkadang kita menggunakan satu baris kode.
 - jika kita membuat method dengan body yang sangat sederhana, kita bisa gunakan expression body
 - expression body mirip ketika kita membuat anonymous function
  */
