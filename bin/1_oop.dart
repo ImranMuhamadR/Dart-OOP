@@ -49,3 +49,11 @@ void main2() {
   person2.alamat = 'Tanggerang';
   person2.tinggiBadan = 170.0;
 }
+
+void main3() {
+  Person person3 = Person();
+  person3.nama = 'Budi Darsono';
+  person3.umur = 24;
+  person3.alamat = 'Jakarta selatan';
+  person3.tinggiBadan = 175.0;
+}
