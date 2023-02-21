@@ -29,15 +29,23 @@ class Person {
 }
 
 void main() {
-  Person data = Person();
-  data.nama = 'Imran Muhamad Rafi';
-  data.umur = 21;
-  data.alamat = 'Cirebon';
-  data.tinggiBadan = 167.0;
-  data.startEngine();
+  Person person1 = Person();
+  person1.nama = 'Imran Muhamad Rafi';
+  person1.umur = 21;
+  person1.alamat = 'Cirebon';
+  person1.tinggiBadan = 167.0;
+  person1.startEngine();
   /*
   !PENJELASAN PROGRAM :
   Di sini, kita membuat class "DataDiri" yang memiliki 4 properti (nama, umur, alamat, tinggiBadan) dan 1 method (startEngine). 
   Kemudian kita membuat objek "myCar" dari class "Car" dan mengisi properti dan menjalankan methodnya.
    */
+}
+
+void main2() {
+  Person person2 = Person();
+  person2.nama = 'Tatang';
+  person2.umur = 20;
+  person2.alamat = 'Tanggerang';
+  person2.tinggiBadan = 170.0;
 }
