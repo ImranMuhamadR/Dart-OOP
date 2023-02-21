@@ -8,7 +8,9 @@ class Computer {
   void startup() => print("Coomputer is starting");
   void shutdown() => print("Coomputer is shutting down");
 
+  //MENGGUNAKAN RETURN VALUE
   String getOperatingSystem() => "Linux";
+  int padaTahun() => 1981;
 }
 
 //CONTOH MEMANGGIL METHOD EXPRESSION BODY
@@ -17,4 +19,5 @@ void main() {
   computer.startup();
   computer.shutdown();
   print(computer.getOperatingSystem());
+  print(computer.padaTahun());
 }
