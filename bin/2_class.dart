@@ -48,26 +48,25 @@ class Person {
     print('Hello $parameterName, My name is $name');
   }
 
-  //CONTOH METHOD YANG ADA DI DALAM CLASS PERSON
-  void myHobi(String iniNama) {
-    print('Hobi saya  $iniNama, dan saya berasal dari $country');
+  //CONTOH METHOD DENGAN RETURN VALUE
+  String myHobi() {
+    return 'Hello, my names is $name';
   }
 }
 
 void main() {
   var person1 = Person();
 
-  //CONTOH MANIPULASI FIELD
+  //CONTOH MANIPULASI PROPERTI
   person1.name = 'Ai';
   person1.addres = 'Jakarta';
   person1.country;
 
-  //CONTOH MENGAMBIL NILAI FIELD
+  //CONTOH MENGAMBIL NILAI DARI PROPERTI
   print(person1.name);
   print(person1.addres);
   print(person1.country);
 
   //MENGAKSES FUNCTION
   person1.sayHello("imran");
-  person1.myHobi("Reading");
 }
