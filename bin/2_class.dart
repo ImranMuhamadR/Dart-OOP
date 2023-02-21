@@ -44,8 +44,8 @@ class Person {
   int? umur = 21;
 
   //CONTOH METHOD YANG ADA DI DALAM CLASS PERSON
-  void sayHello(String paraName) {
-    print('Hello $paraName, My name is $name');
+  void sayHello(String parameterName) {
+    print('Hello $parameterName, My name is $name');
   }
 
   //CONTOH METHOD YANG ADA DI DALAM CLASS PERSON
