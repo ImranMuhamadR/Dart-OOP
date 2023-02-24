@@ -4,6 +4,9 @@
 - Cara membuat Redirecting Constructor adalah dengan menambahkan : (titk dua), lalu di ikuti dengan 
   memanggil this(parameter), dimana this() disini adalah dianggap menagkses Default Constructor
 - Saat membuat Redirecting Constructor, kita tidak bisa menambahkan body pada Redirecting Constructor
+!REDIRECTING KE NAMED CONSTRUCTOR
+- Redirecting juga bisa dilakukan ke Named Constructor
+- Caranya kita ganti ketika memanggil this menjadi this.namedConstructor()
  */
 class Person {
   String name = "Imran Muhamad Rafi";
@@ -14,6 +17,8 @@ class Person {
   //INI MERUPAKAN REDIRECTING CONTRUCTOR.
   Person.withName(String name) : this(name, "NO ADDRESS");
   Person.withAddress(String address) : this("NO NAME", address);
+  //INI MERUPAKAN REDIRECTING KENAMED CONSTRUCTOR
+  Person.inCirebon() : this.withAddress("Cirebon");
 }
 
 void main() {
@@ -29,4 +34,8 @@ void main() {
   var person3 = Person.withAddress("Andi");
   print(person3.name);
   print(person3.address);
+
+  var person4 = Person.inCirebon();
+  print(person4.name);
+  print(person4.address);
 }
