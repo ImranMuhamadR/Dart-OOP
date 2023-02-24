@@ -12,7 +12,14 @@ class Customer {
   Customer(this.fullName)
       //INI MERUPAKAN INITIALIZER LIST
       : firstName = fullName.split("")[0],
-        lastName = fullName.split("")[1] {
+        lastName = fullName.split("")[2] {
     print('Create New Customer');
   }
+}
+
+void main() {
+  var customer = Customer("Imran Mr");
+  print(customer.firstName);
+  print(customer.lastName);
+  print(customer.fullName);
 }
