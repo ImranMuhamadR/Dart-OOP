@@ -6,6 +6,7 @@
 - Untuk membuat Factory Constructor kita bisa menggunakan kta kunci Factory sebelum pembuatan Constructor nya
  */
 class Database {
+  //INI MERUPAKAN CONSTRUCTOR DEFAULT
   Database() {
     print('Create new Database');
   }
