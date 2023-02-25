@@ -8,7 +8,7 @@ class Person {
   String nama = "Person";
 
   void sayHello(String name) {
-    print('Hello $nama, my name is $this.name');
+    print('Hello $nama, my name is ${this.nama}');
   }
 }
 
@@ -21,5 +21,5 @@ void main() {
   person.sayHello('Budi');
 
   var otherPerson = OtherPerson();
-  person.sayHello('Budi');
+  otherPerson.sayHello('Budi');
 }
