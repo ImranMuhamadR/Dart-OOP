@@ -9,7 +9,7 @@ class Manager {
 
   //INI ADALAH SEBUAH METHOD sayHello
   void sayHello(String name) {
-    print('Hello $name, my name is ${this.name}');
+    print('Hello $name, my name is Manager${this.name}');
   }
 }
 
@@ -18,4 +18,16 @@ class Karyawan extends Manager {
   void sayHello(String name) {
     print('Hello $name, my name is Karyawan${this.name}');
   }
+}
+
+void main() {
+  var manager = Manager();
+  manager.name = 'Imran Muhamad Rafi';
+  manager.sayHello('Tatang');
+  print(manager.name);
+
+  var karyawan = Karyawan();
+  karyawan.name = 'Budi';
+  karyawan.sayHello('Dadang');
+  print(karyawan.name);
 }
