@@ -5,4 +5,31 @@
 - Sederhananya, super digunakan untuk mengakses class parent
 - Tidak hanya method, field milik parent class pun bisa kita akses menggunakan kata kunci super
  */
+class Shape {
+  int getCorner() {
+    return 0;
+  }
+}
 
+class Rectangle extends Shape {
+  //INI MERUPAKAN METHOD GETCOERNER
+  int getCorner() {
+    return 4;
+  }
+
+  //INI MERUPAKAN METHOD GETPARENTCORNER
+  int getParentCorner() {
+    return super.getCorner();
+  }
+}
+
+void main() {
+  var rectangle = Rectangle();
+
+  print(rectangle.getCorner());
+  print(rectangle.getParentCorner());
+}
+/*
+!PENEJELASAN :
+jika kita ingin mengakses method get corner 
+ */
