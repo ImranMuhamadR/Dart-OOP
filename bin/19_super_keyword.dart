@@ -32,7 +32,7 @@ void main() {
 /*
 !PENEJELASAN :
 jika kita ingin mengakses method get corner parent nya tanpa menggunakan super keyword maka nanti outputnya akan di overriding yang tadinya 
-return 0 yaitu dari class Shape berubah menjadi return 4 yaitu dari class Rectangle karena di overriding. Tetapi jika kita ingin mengakses field atau method dari class parent nya kita 
+return 0 yaitu dari class Shape berubah menjadi return 4 yaitu dari class Rectangle karena di overriding terhadap class child nya. Tetapi jika kita ingin mengakses field atau method dari class parent nya kita 
 bisa menggunakan super contohnya seperti diatas yaitu return super.getCorner(method getCorner) maka nanti ketika kita akses yang nampil yaitu dari class parent nya
 bukan dari class childnya lagi.
  */
